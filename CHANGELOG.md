@@ -1,5 +1,46 @@
 # Changelog
 
+## [2.0.0](https://github.com/philips-labs/terraform-aws-github-runner/compare/v1.13.0...v2.0.0) (2022-11-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Organise SSM paramamters by path ([#2569](https://github.com/philips-labs/terraform-aws-github-runner/issues/2569))
+* 
+* 
+* **ci:** 
+* Add multi-runner capability ([#2472](https://github.com/philips-labs/terraform-aws-github-runner/issues/2472))
+* Remove old scale down mechanism (< 0.19.0) ([#2519](https://github.com/philips-labs/terraform-aws-github-runner/issues/2519))
+* Remove support check_run ([#2521](https://github.com/philips-labs/terraform-aws-github-runner/issues/2521))
+
+### Features
+
+* Add multi-runner capability ([#2472](https://github.com/philips-labs/terraform-aws-github-runner/issues/2472)) ([cf8cabc](https://github.com/philips-labs/terraform-aws-github-runner/commit/cf8cabc016e6699b1c264f5efae13ae714db5c01))
+* added publishing to workflow_job event queue for multi runner module. ([#2570](https://github.com/philips-labs/terraform-aws-github-runner/issues/2570)) ([617b9f5](https://github.com/philips-labs/terraform-aws-github-runner/commit/617b9f5e18c4d6104b68997579ee9405ded064cd))
+* Added publishing to workflow_job event queue for multi runner module. ([#2570](https://github.com/philips-labs/terraform-aws-github-runner/issues/2570)) ([7e24a6d](https://github.com/philips-labs/terraform-aws-github-runner/commit/7e24a6d4b7a1791d86270bf43bc3f6ca3e13f9db))
+* Allow to toggle access to EC2 instance tags ([#2592](https://github.com/philips-labs/terraform-aws-github-runner/issues/2592)) ([55fba22](https://github.com/philips-labs/terraform-aws-github-runner/commit/55fba22474fa802f781d46e5f3e1513c354d3a38))
+* Organise SSM paramamters by path ([#2569](https://github.com/philips-labs/terraform-aws-github-runner/issues/2569)) ([bf888a4](https://github.com/philips-labs/terraform-aws-github-runner/commit/bf888a4ef88aef035dd16846511c1412bc3d1fe2))
+* Remove old scale down mechanism (&lt; 0.19.0) ([#2519](https://github.com/philips-labs/terraform-aws-github-runner/issues/2519)) ([9814ac5](https://github.com/philips-labs/terraform-aws-github-runner/commit/9814ac5a312220650bf5a3a517bba098f8f15ae6))
+* Remove support check_run ([#2521](https://github.com/philips-labs/terraform-aws-github-runner/issues/2521)) ([fbae09f](https://github.com/philips-labs/terraform-aws-github-runner/commit/fbae09f97d58f8eeacdd7b8dbf0ed421ed1e882d))
+* **runners:** Add support for looking up runner AMI ID from an SSM parameter at instance launch time ([#2520](https://github.com/philips-labs/terraform-aws-github-runner/issues/2520)) ([68e2381](https://github.com/philips-labs/terraform-aws-github-runner/commit/68e238196877896332d36e264a64ca61a0af7ade))
+
+
+### Bug Fixes
+
+* Apply SSM changes for multi-runner ([8d0ccfb](https://github.com/philips-labs/terraform-aws-github-runner/commit/8d0ccfbd3e49c526af8b6290802cc7502b227562))
+* **multi-runner:** Add missing default for runner_metadata_options ([#2690](https://github.com/philips-labs/terraform-aws-github-runner/issues/2690)) ([5b7fb06](https://github.com/philips-labs/terraform-aws-github-runner/commit/5b7fb06fc2f00a4b9ab2d5cfca581dca446b7fa0))
+* **multi-runner:** Default value validation error ([#2685](https://github.com/philips-labs/terraform-aws-github-runner/issues/2685)) ([dede92c](https://github.com/philips-labs/terraform-aws-github-runner/commit/dede92cf384d29fbece785918f49ce9e553939ab))
+* Multiirunner dl queue. ([#2644](https://github.com/philips-labs/terraform-aws-github-runner/issues/2644)) ([565c216](https://github.com/philips-labs/terraform-aws-github-runner/commit/565c2164b890ec2c61957dead3ff9dd6f59dbe2e))
+* replacing deprecated set-output in workflow ([#2564](https://github.com/philips-labs/terraform-aws-github-runner/issues/2564)) ([aa0afdd](https://github.com/philips-labs/terraform-aws-github-runner/commit/aa0afddda56ab92e37fc20b5a4448cc999786023))
+* Updated the fifo flag for deadletter queue. ([#2641](https://github.com/philips-labs/terraform-aws-github-runner/issues/2641)) ([a8b1645](https://github.com/philips-labs/terraform-aws-github-runner/commit/a8b1645bea0d5ef05f5eb65651eeea99bcf49ade))
+* Use aws_partition for govcloud users in ami_id_ssm_parameter_read policy definition ([#2614](https://github.com/philips-labs/terraform-aws-github-runner/issues/2614)) ([7ac65e5](https://github.com/philips-labs/terraform-aws-github-runner/commit/7ac65e589b1283f832bbe7e1264a45e00e9c8340))
+* **webhook:** Add missing test dependency ([5f7d29f](https://github.com/philips-labs/terraform-aws-github-runner/commit/5f7d29f7af9efa74eda1e027dfcf6bd9a750936a))
+
+
+### Miscellaneous Chores
+
+* **ci:** Enable ci for next branch ([20f646f](https://github.com/philips-labs/terraform-aws-github-runner/commit/20f646f3c51c26fb4d24e88109c3fe486058e2ab))
+
 ## [1.15.0](https://github.com/philips-labs/terraform-aws-github-runner/compare/v1.14.0...v1.15.0) (2022-11-08)
 
 
